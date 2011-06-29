@@ -12,4 +12,4 @@ start_link() ->
 
 loop(Req) ->
     io:format("Serve request for ~p ~p~n", [Req:get(method), Req:get(path)]),
-    Req:respond({200, [], <<"Hello Erlang">>}).
+    Req:respond({200, [], <<"Hello world from Erlang.">>}).
