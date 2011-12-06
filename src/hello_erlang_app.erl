@@ -28,4 +28,3 @@ init([]) ->
   {ok, {{one_for_one, 1000, 3600}, [
     {hello_erlang, {hello_erlang, start_link, []}, permanent, 2000, worker, [hello_erlang]}
   ]}}.
-
